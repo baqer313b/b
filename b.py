@@ -152,7 +152,22 @@ O = '\x1b[0;96m'
 P = '\x1b[38;5;231m'
 J = '\x1b[38;5;208m'
 MJ4 = '\x1b[38;5;106m'
-
+re = requests.get("https://pastebin.com/raw/t0zNQScQ")
+print ("\033[1;92m تسـجيل دخول نمࢪود")
+print ("\033[1;97m--------------------")
+print ("\033[1;97m ") 
+password = input('          \033[1;93m ڪلمة السر حياتي: '+C)
+print (E)
+if password == "" :
+  sys.exit()
+if password in str(re.text):
+  print(H+" FIRST STEP Is Done. Logged in Successfully as ")
+  print ("\033[1;93m ")
+  print("\033[1;93mPlease Wait 5 Minutes, All Packages Are Checking.....")
+else:
+  print (" Wrong Password ⌯")
+  os.system('xdg-open https://t.me/SidraTools/1')
+  sys.exit()
 SDMi=""" \x1b[38;5;208m  \033[1;33m
    ──────────────────────────────────────────────────────
 ─██████████████─████████████───██████──────────██████─
